@@ -1,0 +1,131 @@
+$background-color: #003A65;
+.error {
+  text-align: left;
+  margin: 0;
+  font-weight: 600;
+  color: red;
+}
+
+.wrapper {
+  background-color: rgba(8, 8, 8, 0.534);
+  width: 100vw;
+  height: 100vh;
+  z-index: 98;
+  position: fixed;
+}
+
+.loginWrapper {
+  background-color: #fff;
+  height: 520px;
+  width: 520px;
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  margin: auto;
+  @media screen and (max-width: 520px) {
+    width: 95%;
+  }
+
+  .inner_container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .title {
+      color: #003A65;
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      padding-top: 20px;
+    }
+
+    input {
+      padding: 20px;
+      height: 20px;
+      width: 400px;
+      outline: none;
+      margin-top: 30px;
+      background-color: #F6F8FA;
+      border-radius: 6px;
+      border: 1px solid #003A65;;
+      @media screen and (max-width: 520px) {
+        width: 100%;
+      }
+    }
+
+
+    .btn_container {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+
+      input, button {
+        height: 55px;
+        width: 210px;
+        outline: none;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        transition: all ease 0.3s;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -ms-transition: all ease 0.3s;
+        background: #003A65;
+        -o-transition: all ease 0.3s;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+
+        &:hover {
+          opacity: 0.9
+        }
+      }
+
+      .red_btn {
+        background: #DC3545;
+        display: block;
+      }
+
+      .blue_btn {
+        background: $background-color;
+        margin-bottom: 8px;
+      }
+
+
+      p {
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .first_para {
+        margin-top: 40px;
+      }
+    }
+
+
+  }
+}
+
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+
+}

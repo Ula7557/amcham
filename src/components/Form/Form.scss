@@ -1,0 +1,77 @@
+.company-wrapper {
+  .title {
+    font-size: 30px;
+    text-align: center;
+    line-height: 3;
+    @media screen and (max-width: 550px) {
+      font-size: 20px;
+    }
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .align-center {
+    align-items: flex-start;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .label-title {
+    width: 250px;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .mb-2 {
+    margin-bottom: 1rem;
+  }
+
+  .w-50 {
+    width: 50%;
+    @media screen and (max-width: 1140px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+  }
+
+  .loader {
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: all ease 0.5s;
+    z-index: 9999;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.onError {
+  transition: all ease 0.5s;
+  top: -6rem;
+  width: 73%;
+  position: fixed;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &.active {
+    top: 6rem;
+  }
+}

@@ -1,0 +1,125 @@
+.News {
+  background-color: #e4e9f1;
+  padding: 56px 0;
+  @media screen and (max-width: 1110px) {
+    overflow: scroll;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1110px) {
+    width: max-content;
+  }
+}
+
+.title {
+  text-align: center;
+  color: #003A65;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  padding-bottom: 36px !important;
+  display: block;
+  background-color: #e4e9f1;
+}
+
+.Card {
+  max-width: 350px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @media screen and (max-width: 1110px) {
+    &:not(last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width: 515px) {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  & > span {
+    height: 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:hover {
+    .content {
+      transform: translateY(0);
+      background: rgba(0, 58, 101, 0.9);
+
+    }
+  }
+}
+
+.cardImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  transition: all ease 0.3s;
+  height: 100%;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  z-index: 1;
+  width: 100%;
+  padding: 16px;
+  transform: translateY(250px);
+  background: rgba(0, 58, 101, 1);
+
+  a {
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    padding: 0.7rem 1.5rem !important;
+    font-size: 11px !important;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(0, 58, 101, 1);
+    border: 1px solid white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    bottom: 20px;
+    position: absolute;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+
+  h2 {
+
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    min-height: 100px;
+
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+}

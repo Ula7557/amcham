@@ -1,0 +1,31 @@
+.chamberUlBlockTitle {
+    text-align: center;
+    color: #003A65;
+    font-weight:500;
+    font-size: 24px;
+
+}
+.chamberUlBlock {
+    margin: 50px 0;
+}
+
+.chamberUlBlockDesktription {
+    text-align: center;
+    color: #003A65;
+    font-weight:500;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.chamberUlBlockLi {
+    color: #404040;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 10px 0 0 0;
+    margin-left: 30px;
+    opacity: 0.8;
+    @media screen and (max-width:520px) {
+        margin-left: 0;
+        text-align: center;
+    }
+}

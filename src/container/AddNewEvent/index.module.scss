@@ -1,0 +1,156 @@
+.wrapper {
+  padding: 20px;
+  background: #f1f5f7;
+  margin-top: 3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1140px) {
+  flex-direction: column;
+  }
+}
+.column{
+  @media screen and (max-width: 1340px) {
+    & > div,
+    & > span,
+    textarea{
+      width: 100% !important;
+    }
+    flex-direction: column;
+  }
+}
+
+.w65 {
+  width: 65%;
+  @media screen and (max-width: 1140px) {
+    width: 100%;
+  }
+}
+
+.error {
+  font-weight: 600;
+  color: red;
+  margin: 0;
+}
+
+.w30 {
+  width: 30%;
+  @media screen and (max-width: 1140px) {
+    width: 100% !important;
+  }
+  label {
+    width: 100px;
+  }
+}
+
+.card {
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.25rem;
+  margin-bottom: 22px;
+
+  input, select {
+    min-width: 225px;
+    padding: 0.47rem 0.65rem;
+    height: calc(1.4em + 0.94rem + 2px);
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #505d69;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+    &:focus {
+      outline: 1px solid rgba(0, 58, 101, 0.38);
+    }
+  }
+
+  label {
+    display: block;
+    color: #505d69;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+}
+
+
+.innerCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
+  button {
+    margin: 0 10px;
+  }
+}
+
+
+.fileUploadInput {
+  display: none !important;
+}
+
+.dFlex {
+  display: flex;
+  align-items: baseline;
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+.extraLabel {
+  color: white !important;
+}
+
+.mt20 {
+  margin-top: 30px;
+}
+
+.title {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  align-items: center;
+  padding: 8px 7px;
+  line-height: 34px;
+  margin-bottom: 12px;
+  color: #003A65;
+  font-size: 28px;
+  font-weight: 600;
+
+}
+
+.uploadLabel {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background: #003a65;
+  color: #FFFFFF !important;
+}
+
+.deleteRow {
+  border-radius: 4px;
+  padding: 8px;
+  color: #FFFFFF;
+  background: red;
+}
+
+.placeholder {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  width: 100%;
+  max-height: 80px;
+  border: 1px solid #A9A5A5;
+}

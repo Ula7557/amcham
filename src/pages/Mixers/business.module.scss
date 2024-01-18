@@ -1,0 +1,56 @@
+.card {
+  width: 30%;
+  border: 1px solid rgba(80, 93, 105, 0.33);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+ 
+  @media screen and (max-width: 776px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 992px) {
+    width: 45%;
+  }
+
+  &:not(last-child) {
+    margin-right: 25px;
+  }
+
+  img {
+    max-height: 272px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  color: black;
+}
+
+.title {
+  font-size: 36px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.wrapper {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60vh;
+  @media screen and (max-width: 776px) {
+    flex-wrap: wrap;
+  }
+
+}
+
+.paragraph {
+    height: 150px;
+    overflow: hidden;
+}

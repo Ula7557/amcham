@@ -1,0 +1,388 @@
+
+.hero {
+  background: #F6F8FA;
+  padding: 80px 0;
+  margin-bottom: 20px;
+  @media screen and (max-width: 525px) {
+    padding: 60px 0;
+  }
+}
+
+.extra {
+  justify-content: center;
+  margin-right: 12px;
+  width: 40%;
+
+  a {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+  }
+  .user_info{
+    margin-top: 40px;
+  }
+  .name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    b{
+      font-size: 17px;
+    }
+    img{
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    span{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 25px;
+      color: #000000;
+      display: block;
+      margin-left: 4px;
+    }
+  }
+
+  
+
+  @media screen and (max-width: 968px) {
+    width: 100%;
+    a {
+      margin: unset;
+    }
+  }
+}
+
+.w70 {
+  width: 70%;
+  @media screen and (max-width: 968px) {
+    width: 100%;
+  }
+}
+
+.title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: #003A65;
+  max-width: 600px;
+  font-size: 40px;
+  line-height: 62px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 33px;
+  }
+
+  @media screen and (max-width: 525px) {
+    font-size: 28px;
+
+  }
+}
+
+.image {
+  margin-right: 25px;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 525px) {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    margin-bottom: 26px;
+  }
+}
+
+.userInfo {
+  font-weight: 600;
+  padding-left: 30px;
+  margin-bottom: 6px;
+  background-image: url("../../assets/icons/user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+}
+
+.description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.row {
+  margin-bottom: 16px;
+  display: flex;
+  @media screen and (max-width: 968px) {
+    flex-direction: column;
+  }
+
+  &:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+.info {
+  display: block;
+  max-width: 200px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #003A65;
+
+  b {
+    display: block;
+  }
+}
+
+.type {
+  margin-bottom: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #003A65;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 5px;
+  }
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .status_info{
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #003A65;
+    margin: 0;
+  }
+
+
+
+  span:nth-child(2) {
+    background-image: url("../../assets/icons/GoldMine.png");
+  }
+
+
+  span:nth-child(3) {
+
+    &.silver:before {
+      display: none;
+    }
+  }
+
+  span:nth-child(4) {
+
+    &.bronze:before {
+      display: none;
+    }
+  }
+
+    
+}
+
+.datasWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  p {
+    position: relative;
+    padding-left: 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 24px;
+      background: url('../../assets/icons/user.svg') center;
+      background-size: cover;
+    }
+  }
+}
+
+.banner {
+  padding: 21px 0;
+  background: #C4DBF2;
+  margin: 50px 0;
+  svg{
+     width : 32px;
+     height: 22px ;
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    & > div {
+      justify-content: flex-start;
+      align-items: flex-start !important;
+      flex-direction: column !important;
+    }
+    a {
+      margin-bottom: 20px;
+      display: flex;
+      svg{
+        width: 30px;
+      }
+      align-items: center;
+    }
+  }
+
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #003A65;
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.FlexBetween {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  @media screen and (max-width: 525px) {
+    flex-direction: column;
+    div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cardRow {
+  margin-bottom: 13px;
+  position: relative;
+
+  a {
+    color: #003A65;
+  }
+
+  &:first-child::before {
+    content: '';
+    bottom: 0;
+    top: 10px;
+    background-image: url("../../assets/icons/user-icon.svg");
+    left: -35px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &:last-child::before {
+    content: '';
+    bottom: 0;
+    top: 0;
+    background-image: url("../../assets/icons/mail.svg");
+    left: -35px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &:nth-child(2)::before {
+    content: '';
+    bottom: 0;
+    top: 0;
+    background-image: url("../../assets/icons/phone.svg");
+    left: -35px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  span {
+    display: block;
+  }
+
+  p, b {
+    margin: 0;
+  }
+}
+
+.innerCard {
+  padding: 18px 25px 18px 75px;
+  background: transparent;
+  border: 3px solid #C4DBF2;
+  width: 300px;
+  box-sizing: border-box;
+  box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  position: relative;
+  min-height: 171px;
+  overflow: hidden;
+  &:not(last-child) {
+    margin-right: 15px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    left: 34px;
+    top: 0;
+    background: #C4DBF2;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,83 @@
+
+.home {
+  margin: 0;
+}
+
+.presidentNote {
+  padding: 56px 15px;
+  @media screen and (max-width: 767px) {
+    padding: 56px 15px;
+  }
+}
+
+.prezidentTitle {
+  text-align: center;
+  color: #003A65;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 56px !important;
+  display: block;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+
+  img {
+    @media screen and (max-width: 525px) {
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .presidentImage {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-right: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.presidentInfo {
+  padding: 0 15px;
+  width: 70%;
+  color: #003A65;
+  font-weight: 400;
+  font-size: 1.2em !important;
+  text-align: justify;
+  @media screen and (max-width: 767px) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.preview_text {
+  margin-bottom: 32px !important;
+  @media screen and (max-width: 767px) {
+    margin: 50px auto 32px auto !important;
+
+
+  }
+}
+
+.presidentPosition {
+  margin-bottom: 8px;
+}

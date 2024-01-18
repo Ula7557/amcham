@@ -1,0 +1,152 @@
+.Heading {
+    padding: 70px 15px;
+    text-align: center;
+    background: #F6F8FA;
+
+}
+
+.title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 26px;
+    font-size: 26px;
+    line-height: 32px;
+    color: #003A65;
+}
+
+.describtion {
+    max-width: 938px;
+    margin: 0 auto;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.content {
+    padding: 26px 0;
+    margin-bottom: 70px;
+}
+
+.subtitle {
+    margin-bottom: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #003A65;
+    text-align: center;
+}
+
+.card {
+    width: 438px;
+    background: #FFFFFF;
+    border: 2px solid #EBEBEB;
+    box-sizing: border-box;
+    padding: 35px 44px;
+    position: relative;
+    min-height: 434px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    transition: all ease 0.3s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    @media screen and (max-width: 909px) {
+        margin: 0 auto 32px;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 48%;
+    }
+  @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    &:hover {
+        border: 2px solid #003A65
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 35px;
+
+}
+
+.link {
+    background: #003A65;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    bottom: 46px;
+    left: 46px;
+}
+
+.cardImg {
+    margin-bottom: 22px;
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.cardTitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 17px;
+    color: #003A65;
+}
+
+.cardDescribtion {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    overflow: hidden;
+    position: relative;
+    height: 170px;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 11;
+        box-shadow: -6px -82px 44px -34px rgba(255, 255, 255, 0.98) inset;
+    }
+}
+
+.Committees {
+    max-width: 1880px;
+    margin: 0 auto;
+}

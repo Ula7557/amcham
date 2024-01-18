@@ -1,0 +1,244 @@
+.table {
+  width: 100%;
+}
+
+.banner {
+  padding: 50px 0;
+  background: #F6F8FA;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #003A65;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.welcoming {
+  min-height: 400px;
+  background: url("../../assets/images/bratlar.png") center center;
+  margin-bottom: 60px;
+}
+
+.content {
+  width: 70%;
+}
+
+.image {
+  width: 25%;
+}
+
+.welcomingTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #003A65;
+  margin-bottom: 50px;
+}
+
+.welcomingDescription {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.benefitsTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #003A65;
+  margin-bottom: 50px;
+}
+
+.guide {
+  width: 33%;
+  border-left: 5px solid #003A65;
+  padding: 10px 37px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  .count {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #003A65;
+    @media screen and (max-width: 525px) {
+      margin-bottom: 0;
+      font-size: 22px;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.guideTitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 13px;
+  line-height: 27px;
+  color: #F00404;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 525px) {
+    font-size: 12px;
+  }
+}
+
+.guideText {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #003A65;
+  @media screen and (max-width: 525px) {
+    font-size: 10px;
+  }
+}
+
+.guidesTitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 48px;
+  color: #003A65;
+  margin-bottom: 26px;
+  @media screen and (max-width: 525px) {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+}
+
+.applyButton {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bd2130), color-stop(1, #dc3545));
+  border: 1px solid #b01f2c;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  font-size: 1.3em;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 7%);
+  text-shadow: 0 1px 0 rgb(0 0 0 / 5%);
+  color: #ffffff;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+
+  &:hover {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a12733), color-stop(1, #8d2631));
+
+  }
+
+
+}
+
+.applicationForm {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.infographics {
+  margin-bottom: 60px;
+
+}
+
+.infographicsRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  div {
+    border-radius: 8px;
+    background-color: #003A65;
+    min-height: 320px;
+    width: 47%;
+    padding: 32px 55px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      width: 95%;
+      margin-bottom: 20px;
+    }
+  }
+
+  span {
+    color: white;
+    display: block;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.infoTitle {
+  font-size: 25px;
+  line-height: 2;
+  text-align: center;
+  color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.infographicsButton {
+  width: 100%;
+  margin: 55px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.page {
+  width: 50%;
+}
+.flexbox{
+  display: flex;
+}
+.doc {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

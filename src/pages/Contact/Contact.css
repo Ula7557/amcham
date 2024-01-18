@@ -1,0 +1,157 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-us {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.map-wrapper {
+    width: 500px;
+
+}
+
+@media screen and (max-width: 525px) {
+    .map-wrapper {
+        width: 100%;
+    }
+}
+
+.contact-us h1 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 40px 0 0;
+}
+
+/* email contact section  */
+
+.inner-contact-wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0 100px 0;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 768px) {
+    .inner-contact-wrapper {
+        max-width: 100%;
+    }
+}
+
+.title {
+    font-size: 20px;
+    color: #003A65;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.input-wrapper label {
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.input-wrapper input {
+    padding: 8px 5px 8px 15px;
+    margin: 3px 0 20px 0;
+    /* height: 25px; */
+    width: 26rem;
+    border: 1px solid #d1cfcf;
+    outline: none;
+}
+
+.input-wrapper textarea {
+    height: 200px;
+    width: 26rem;
+    resize: none;
+    margin: 3px 0 20px 0;
+    border: 1px solid #d1cfcf;
+}
+
+.send-button {
+    padding: 10px;
+    height: 40px;
+    width: 422px;
+    border-radius: 3px;
+    background-color: #003A65;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.send-button:hover {
+    height: 39px;
+    cursor: pointer;
+}
+
+.empty-div {
+    padding: 15px 10px;
+    margin: 15px 0;
+    width: 422px;
+    background-color: #fff3cd;
+    border-radius: 3px;
+}
+
+.error {
+    font-weight: 600;
+    color: red;
+}
+
+.asteriks {
+    color: rgb(155, 4, 4);
+}
+
+/* map section */
+
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+}
+
+.contact-leftSide-icons li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact-leftSide-icons a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-leftSide-icons img {
+    object-fit: contain;
+}
+
+.contact-leftSide-icons a:hover {
+    color: rgb(1, 154, 243);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+    .inner-contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 525px) {
+    .input-wrapper input,
+    .input-wrapper textarea,
+    .send-button,
+    .empty-div {
+        width: 100%;
+    }
+
+}

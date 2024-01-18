@@ -1,0 +1,70 @@
+.BoardCards {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+
+  &:not(last-child) {
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 625px) {
+    width: 100%;
+  }
+}
+
+.BoardCardsContent {
+  max-width: 200px;
+  margin-left: 30px;
+  @media screen and (max-width: 525px) {
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: none;
+  }
+}
+
+.linkPerson {
+  padding: 11px 19px;
+  background-color: #003A65;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 11px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  &:hover {
+    color: #003A65;
+    background-color: #fff;
+    border: 1px solid #003A65;
+  }
+
+  @media screen and (max-width: 525px) {
+    text-align: center;
+    display: block;
+  }
+}
+
+.infoPerson {
+  display: block;
+  font-size: 13px;
+  color: #003A65;
+  @media screen and (max-width: 525px) {
+    text-align: center;
+    display: block;
+  }
+}
+
+.BoardCardsImg {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-position: top;
+  margin-bottom: 20px;
+  object-fit: cover;
+  @media screen and (max-width: 525px) {
+    margin: 0 auto;
+  }
+}

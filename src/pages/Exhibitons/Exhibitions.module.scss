@@ -1,0 +1,35 @@
+.Exhibitions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+    min-height: 80vh;
+}
+
+.exhibitionsLink {
+    color: #002A32;
+    font-weight: 700;
+    margin: 10px 0;
+    font-style: normal;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.exhibitionsImg {
+    width: 120px;
+    
+}
+
+.exhibitionsTitle {
+    color: #002A32;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 512px) {
+    font-size: 20px;
+        
+    }
+}

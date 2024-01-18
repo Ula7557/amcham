@@ -1,0 +1,128 @@
+@import "./settings/Slider";
+@import "./settings/table";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+body {
+  text-decoration: none;
+  margin: 0;
+  font: 500 1em /1.7 "Gotham Book", "Gotham A", "Gotham B", "Montserrat", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+.App {
+  padding-top: 68px;
+}
+
+.container {
+  max-width: 1340px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.containerS {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.ant-pagination-item-active {
+  background: #003A65 !important;
+  border-color: #003A65 !important;
+
+}
+
+.CommittessZone_Sidebar__3-KLe {
+  a.active {
+    background: white;
+    color: black;
+  }
+}
+
+.Banner_Slide__2bsf9 > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.slider-wrapper {
+  button.slick-arrow {
+    display: none !important;
+  }
+}
+
+.ant-btn-primary {
+  background: #003a65 !important;
+  border-radius: 4px !important;
+}
+
+.ant-form-item-control-input .ant-form-item-control-input-content {
+  width: 100%;
+  display: flex;
+}
+
+.input-with-image {
+  .ant-form-item-control-input-content {
+    align-items: end;
+    flex-direction: column;
+  }
+}
+
+.ant-input-number {
+  width: 100% !important;
+}
+
+.membership-coin {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  display: block;
+  background-size: contain;
+  position: relative;
+  background-position: center;
+
+
+  &.platinum-coin {
+    background-image: url("../../assets/icons/PlatinumMine.png");
+  }
+
+  &.silver-coin {
+    background-image: url("../../assets/icons/SilverMine.png");
+  }
+
+  &.gold-coin {
+    background-image: url("../../assets/icons/GoldMine.png");
+  }
+
+  &.bronze-coin {
+    background-image: url("../../assets/icons/BronzeMine.png");
+  }
+}
+
+
+@media screen and (max-width: 1020px) {
+  .w-50 .ant-upload {
+    width: 100% !important;
+  }
+}

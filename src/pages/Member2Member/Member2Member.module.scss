@@ -1,0 +1,259 @@
+.contentWrapper {
+  max-width: 1340px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  ul {
+    padding: 0;
+  }
+}
+
+.cardContent {
+  flex-grow: 1;
+  padding: 17px 45px 17px 17px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #003A65;
+  margin-bottom: 70px;
+
+  &:not(last-child) {
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 48%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 778px) {
+    flex-direction: column;
+    width: 95%;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-top: 6px solid #003A65;
+    }
+  }
+}
+
+.cardTitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  z-index: 9;
+  font-size: 18px;
+  position: relative;
+  line-height: 25px;
+  color: #003A65;
+  margin-bottom: 25px;
+  width: 80%;
+
+  &:not(last-child) {
+    margin-right: 15px;
+  }
+}
+
+.discount {
+  right: 10px;
+  font-size: 30px;
+  top: 10px;
+  position: absolute;
+  font-weight: 600;
+  color: red;
+}
+
+.contactInfos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner {
+  text-align: center;
+  background: #F6F8FA;
+  padding: 120px 0;
+}
+
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #003A65;
+}
+
+.info {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 32px 15px 120px;
+  margin: 0 auto;
+
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+      text-align: justify;
+    }
+
+    img {
+      margin: 0 auto 20px auto;
+      width: 100%;
+    }
+  }
+}
+
+.imageHolder {
+  width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  img {
+    box-shadow: 0px 4px 5px #003A65;
+    width: 100%;
+  }
+}
+
+.listItem {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 22px;
+  color: #003A65;
+}
+
+.listGourpName {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 15px;
+  color: #003A65;
+}
+
+.contactInfos {
+  flex-wrap: wrap;
+  display: flex;
+
+  p {
+    width: 100%;
+    display: block;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #003A65;
+    padding-left: 25px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background: url("../../assets/icons/user.svg") center no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      margin: auto;
+    }
+
+    &:last-child:before {
+      background: url("../../assets/icons/phone.svg") center no-repeat;
+      background-size: contain;
+
+    }
+
+  }
+}
+
+.image {
+  margin-right: 150px;
+}
+
+.ribbonTopRight {
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  position: absolute;
+
+  span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.ribbonTopRight::before,
+.ribbonTopRight::after {
+  border-top-color: #3498db;
+  border-right-color: #3498db;
+}
+
+.ribbonTopRight::before {
+  top: 0;
+  left: 0;
+}
+
+.ribbonTopRight::after {
+  bottom: 0;
+  right: 0;
+}
+
+.ribbonTopRight span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+  font-size: 14px;
+}

@@ -1,0 +1,54 @@
+.joinUs {
+  .ant-table-thead {
+    .ant-table-cell {
+      text-align: center;
+
+      &::before {
+        display: none;
+      }
+
+      &:nth-child(1) {
+        background-color: #013A66;
+        color: #fff;
+      }
+
+      &:nth-child(2) {
+        background-image: url('../../images/platinum_2.png');
+
+        background-position: center;
+        background-size: 110%;
+        position: relative;
+        color: #fff;
+      }
+
+      &:nth-child(3) {
+        background: rgba(0, 0, 0, 0.58) url('../../images/gold_2.png');
+        background-position: center;
+        background-size: 110%;
+        color: #fff;
+      }
+
+      &:nth-child(4) {
+        background-image: url('../../images/silver_2.png');
+        background-position: center;
+        background-size: 110%;
+        color: #fff;
+      }
+
+      &:nth-child(5) {
+        background-image: url('../../images/bronze_2.png');
+        background-position: center;
+        background-size: 110%;
+        color: #fff;
+      }
+
+    }
+  }
+
+  .ant-table-tbody {
+    .ant-table-cell {
+      border: 1px solid #E0E0E0;
+      text-align: center;
+    }
+  }
+}

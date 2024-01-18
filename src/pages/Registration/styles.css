@@ -1,0 +1,257 @@
+.register h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    color: #003A65;
+    padding-top: 60px;
+}
+
+.info span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.register {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 49px;
+    padding-bottom: 79px;
+    margin-top: 36px;
+}
+
+.info span input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 36px;
+    background: #F6F8FA;
+    border: 1px solid #C4C4C4;
+    border-bottom: 1px solid #003A65;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #444444;
+    padding-left: 29px;
+
+}
+
+.react-tel-input .form-control {
+    margin-bottom: 36px;
+    height: 50px;
+    background: #F6F8FA;
+    border: 1px solid #C4C4C4;
+    border-radius: 0;
+    border-bottom: 1px solid #003A65;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #444444;
+    width: 100% !important;
+    height: 48px !important;
+}
+
+.info span:nth-child(2) {
+    margin-bottom: 36px;
+}
+
+.info span input:focus {
+    outline: 0;
+}
+
+.register button {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #DC3545;
+    padding: 25px 30px 25px 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    cursor: pointer;
+
+}
+.register button     svg{
+        margin-right: 8px
+    }
+
+.register button img {
+    margin-right: 10px;
+}
+
+.company select {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding-right: 25px;
+    cursor: pointer;
+    margin-bottom: 36px;
+    width: 434px;
+    height: 54px;
+    padding-left: 29px;
+    
+}
+
+.company select:focus {
+    outline: 0;
+}
+
+.appeal select:focus {
+    outline: 0;
+}
+
+.number select:focus {
+    outline: 0;
+}
+
+.appeal {
+    width: 100%;
+}
+
+.appeal select {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    padding-left: 28px;
+}
+
+input::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #444444;
+    
+}
+
+.phonenumber select {
+    background: #E9EBED;
+    width: 105px;
+    height: 50px;
+    padding: 15px 14px 15px 31px;
+    background: #F6F8FA;
+    border: 1px solid #C4C4C4;
+    border-right: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+    border-bottom: 1px solid #003A65;
+}
+
+.phonenumber p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #444444;
+    margin-top: -18px;
+    margin-bottom: 4px;
+}
+
+.number {
+    display: flex;
+    width: 400px;
+    
+}
+
+@media (max-width:1200px) {
+    .info {
+        width: 100%;
+    }
+    
+    .register {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:900px) {
+    .info {
+        flex-wrap: wrap-reverse;
+    }
+
+    
+}
+
+@media (max-width:480px) {
+    .info span input {
+        width: 291px;
+    }
+    
+    .company select {
+        width: 320px;
+    }
+    
+    .appeal select {
+        width: 320px;
+    }
+    
+    .number {
+        width: 320px;
+    }
+    
+    .react-tel-input .form-control {
+        width: 320px;
+    }
+}
+.checkbox{
+    display: flex;
+    margin-bottom: 24px !important;
+    align-items: center;
+}
+.checkbox input{
+    height: auto !important;
+    width: auto !important;
+    margin-bottom: 0 !important;
+    margin-right: 12px;
+}
+.pirvacy{
+    color: red;
+    margin: 1.5rem 0 ;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+}

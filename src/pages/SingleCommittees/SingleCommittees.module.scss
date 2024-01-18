@@ -1,0 +1,374 @@
+.CommitteeWrapper {
+  padding: 70px 0;
+  background: #F6F8FA;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.Dflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.mainTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+
+  color: #000000;
+  font-family: Montserrat;
+
+  @media screen and (max-width: 525px) {
+    text-align: center;
+  }
+}
+
+.wrapper {
+
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  width: 65%;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 35px 10px;
+
+  }
+}
+
+.CollapseTitle {
+  padding: 12px 14px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+  color: #000000;
+
+  @media screen and (max-width: 525px) {
+    font-size: 15px;
+  }
+}
+
+.innerCollapse {
+  display: flex;
+  justify-content: space-between;
+  background: #E8EFF5;
+  position: relative;
+  cursor: pointer;
+}
+
+.collapseContent {
+  height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background: #e8eff5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+  color: #000000;
+  border-top: 1px solid #ddd;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.collapseIcon {
+  background: #003A65;
+  height: revert;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+  width: 60px;
+  display: inline-block;
+
+  @media screen and (max-width: 525px) {
+  }
+}
+
+.subtitle {
+  padding-bottom: 16px;
+  margin-top: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+  border-bottom: 1px solid #C4DBF2;
+}
+
+.cardsWrapper {
+  padding-top: 29px;
+}
+
+.card {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #C4DBF2;
+  align-items: center;
+  @media screen and (max-width: 525px) {
+    flex-direction: column;
+  }
+}
+
+.cardImage {
+  margin-right: 43px;
+  height: 160px;
+  width: 244px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+
+  img {
+    margin-right: 4px;
+    display: inline-block;
+  }
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  color: #A9A5A5;
+}
+
+.cardTitle {
+  margin-bottom: 8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.cardText {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.CardButton {
+  background: #003A65;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+
+  &:hover {
+    background: #003965d2;
+
+  }
+}
+
+.Redirect {
+  padding: 16px 20px;
+  background: white;
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 525px) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+.aside {
+  box-sizing: border-box;
+  width: 30%;
+
+  @media screen and (max-width: 525px) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 20px;
+    width: 100%;
+
+  }
+}
+
+.redirectTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+  padding-bottom: 8px;
+  font-family: Montserrat;
+  border-bottom: 1px solid #C4DBF2;
+}
+
+.redirectDescribtion {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 31px;
+  color: #000000;
+}
+
+.redirectButton {
+  background: #4396D2;
+  border: none;
+  padding: 15px 64px 15px 32px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+
+  &:hover {
+    span {
+      width: 100%;
+    }
+  }
+
+  span {
+    width: 39px;
+    background: #003A65;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+    -webkit-transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+    -moz-transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+    -ms-transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+    -o-transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+  }
+}
+
+
+.CalendarContent {
+  height: 30rem;
+  width: 100%;
+  padding: 32px;
+  background: #3b6acba3;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+
+  @media screen and (max-width: 525px) {
+    width: 100%;
+  }
+
+  h2 {
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    line-height: 3.4;
+    color: white;
+    font-weight: bold;
+    background-color: #003A65;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;;
+  }
+}
+
+.calendar {
+  margin-top: 1rem;
+}
+
+.content {
+  margin-top: 1rem;
+  background: #fff;
+  height: initial;
+  border-radius: 7px;
+
+  @media screen and (max-width: 525px) {
+    width: 100%;
+  }
+
+  h2 {
+    padding: 20px;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #003A65;
+    border-bottom: 2px solid rgba(196, 196, 196, 0.27);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.events {
+  padding: 10px 0;
+}
+
+.event {
+  display: flex;
+  padding: 0 10px;
+
+  p {
+    margin: 0;
+  }
+
+  margin-bottom: 1rem;
+}

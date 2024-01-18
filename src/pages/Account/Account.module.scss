@@ -1,0 +1,88 @@
+.Wrapper {
+    padding-top: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sidebar {
+    transition: all ease 0.4s;
+    width: 15%;
+    border-right: 1px solid #c4c4c4;
+    background: white;
+    padding-top: 28px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 58px;
+        top: 38px;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 28px;
+        width: 40%;
+        top: 10px;
+    }
+    position: absolute;
+    transform: translateX(-100%);
+    z-index: 999;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.toggler {
+    width: 30px;
+    left: 0;
+    top: 70px;
+    @media screen and (max-width: 1024px) {
+        top: 100px;
+    }
+    @media screen and (max-width: 768px) {
+        top: 70px;
+    }
+
+    svg {
+        fill: #003A65
+    }
+
+    background: none;
+    border-radius: 4px;
+    border: 1px solid #003A65;
+    font-size: 20px;
+    height: 30px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.content {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    padding: 30px 45px;
+    min-height: 80vh;
+}
+
+.btnLink {
+    padding: 20px 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    line-height: 2;
+    width: 100%;
+    text-align: start;
+    border: none;
+    background: white;
+    color: #003a65;
+    cursor: pointer;
+
+    &.active {
+        background: #003a65;
+        color: #fff;
+    }
+}
+
+.wrapper {
+    display: flex;
+    background: #C4DBF2;
+    padding-top: 0rem;
+}

@@ -1,0 +1,172 @@
+
+.wrapper {
+  background: #f1f5f7;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+.roleInput {
+  background: white;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.formControl {
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 15px 25px;
+  @media screen and (max-width: 525px) {
+    width: 100% !important;
+  }
+  input, textarea {
+    display: block;
+    padding: 0.47rem 0.65rem;
+    font-size: 14px;
+    color: #505d69;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid #0d7be0;
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  label {
+    font-weight: 600;
+    display: inline-block;
+    font-size: 14px;
+    margin: 25px 0 0.5rem;
+    line-height: 1.5;
+    color: #505d69;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+
+  .primaryBtClass {
+    margin-left: 20px;
+  }
+  @media screen and (max-width:525px) {
+    flex-direction: column;
+    align-items: baseline !important;
+
+    .primaryBtClass {
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 0;
+    }
+  }
+.ant-row {
+  width: 85%;
+}
+
+  input, button {
+    margin: 0;
+    height: 35px;
+  }
+
+  button {
+    padding: 0;
+  }
+
+  label {
+    width: 100%;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 4px 15px;
+  }
+}
+
+.upload {
+  width: 200px;
+}
+
+.error {
+  font-weight: 600;
+  color: red;
+}
+
+.title {
+  margin-bottom: 12px;
+  color: #003A65;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.Imagecard {
+  .innerCard {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    div {
+      margin-right: 8px;
+    }
+
+    input[type=file] {
+      display: none;
+    }
+
+    div:nth-child(4) {
+      display: flex;
+      margin-bottom: 7px;
+    }
+
+    div:nth-child(3) div {
+      display: flex;
+      justify-content: space-between;
+      width: 104%;
+
+      button {
+        height: 100%;
+
+        label {
+          color: white;
+          margin: 0;
+        }
+      }
+    }
+
+    button {
+      margin: 0 10px;
+    }
+  }
+
+}
+
+.uploadLabel {
+  color: #FFFFFF !important;
+  padding: 8px;
+  border-radius: 4px;
+  background: #003a65;
+  margin: 0 10px !important;
+}
+
+.deleteRow {
+  border-radius: 4px;
+  padding: 10px;
+  color: #FFFFFF;
+  background: red;
+}

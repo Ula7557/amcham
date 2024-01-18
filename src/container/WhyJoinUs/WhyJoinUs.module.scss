@@ -1,0 +1,69 @@
+.dFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+
+}
+
+.title {
+  font-size: 3em;
+  text-align: center;
+  color: #003a65;
+  font-size: 2em;
+  padding: 3.5rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.image {
+  width: 220px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: flex;
+}
+
+.link {
+  color: #4e97d8;
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.text {
+  color: #003a65;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.6rem;
+  font-size: 1em;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.column {
+  max-width: 400px;
+  width: 100%;
+  padding: 0 15px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+  }
+}
+
+.joinUsWrapper {
+  background-color: #e4e9f1 !important;
+  padding-bottom: 48px;
+}

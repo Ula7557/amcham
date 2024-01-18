@@ -1,0 +1,96 @@
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #003A65;
+  text-align: center;
+  padding: 80px 0 10px;
+}
+
+.banner {
+  width: 100%;
+  object-fit: cover;
+  max-height: 440px;
+  margin-bottom: 12px;
+}
+
+.plainText {
+  color: #404040;
+  margin: 0 auto 1em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.mission {
+  background-color: #003a65;
+  padding: 50px 0px 50px 0px;
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.missionTitle {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.missionText {
+  margin-top: 8px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.visiontitle {
+  margin-bottom: 30px;
+  margin-top: 3rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.stepTitle {
+  color: #003A65;
+  margin-bottom: 18px;
+  font-size: 22px;
+  text-align: center;
+  @media screen and (max-width: 525px) {
+    font-size: 22px;
+  }
+}
+
+.step {
+  img {
+    width: 100%;
+  }
+  @media screen and (max-width: 525px) {
+    span {
+      font-size: 17px !important;
+    }
+  }
+}
+
+.stepSubtitle {
+  color: #003A65;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.stepsWrapper {
+  padding: 0 3rem;
+
+  margin-bottom: 6rem;
+  li {
+    line-height: 2;
+    color: #404040;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+  }
+}
